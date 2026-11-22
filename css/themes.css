@@ -1,0 +1,120 @@
+/* ============================================================
+   THEMES — Boutique Style (Offre 1)
+   Themes dyal boutique 7a9i9iya — dafi, naturel, mode.
+   Bach tbeddel theme dyal site kamel, beddel ghir data-theme
+   f <html> f kol page : <html lang="fr" data-theme="rose">
+   Wla khalli l-visitor ybeddel men footer (kay-t7fed
+   f navigateur b localStorage).
+   Themes : terracotta (default) | rose | sauge | noir-or | denim
+   ============================================================ */
+
+/* ---------- Theme TERRACOTTA — crème + terracotta / default ---------- */
+:root,
+[data-theme="terracotta"] {
+  --bg: #f6efe6;
+  --bg-soft: #ede2d2;
+  --surface: #fffaf2;
+  --surface-2: #f1e6d4;
+  --text: #2a211a;
+  --text-strong: #17100a;
+  --muted: #7a6a58;
+  --accent: #c05f33;
+  --accent-2: #d98a63;
+  --accent-ink: #ffffff;
+  --border: rgba(42, 33, 26, 0.14);
+  --border-strong: rgba(42, 33, 26, 0.32);
+  --hero-overlay: linear-gradient(180deg, rgba(246, 239, 230, 0.05) 0%, rgba(246, 239, 230, 0.45) 55%, var(--bg) 100%);
+  --card-shadow: 0 18px 40px rgba(120, 70, 35, 0.16);
+  --img-fallback: linear-gradient(135deg, #e8cdb4, #c05f33);
+  --badge-bg: #c05f33;
+  --badge-text: #ffffff;
+  color-scheme: light;
+}
+
+/* ---------- Theme ROSE — rose poudré + bordeaux ---------- */
+[data-theme="rose"] {
+  --bg: #faf0ec;
+  --bg-soft: #f4e2db;
+  --surface: #fff8f5;
+  --surface-2: #f6e3dd;
+  --text: #33201f;
+  --text-strong: #1c0d0d;
+  --muted: #8a6a68;
+  --accent: #8e3b46;
+  --accent-2: #c98a94;
+  --accent-ink: #ffffff;
+  --border: rgba(51, 32, 31, 0.14);
+  --border-strong: rgba(51, 32, 31, 0.32);
+  --hero-overlay: linear-gradient(180deg, rgba(250, 240, 236, 0.05) 0%, rgba(250, 240, 236, 0.45) 55%, var(--bg) 100%);
+  --card-shadow: 0 18px 40px rgba(130, 60, 70, 0.16);
+  --img-fallback: linear-gradient(135deg, #f2d3d0, #8e3b46);
+  --badge-bg: #8e3b46;
+  --badge-text: #ffffff;
+  color-scheme: light;
+}
+
+/* ---------- Theme SAUGE — crème + vert sauge ---------- */
+[data-theme="sauge"] {
+  --bg: #f3f1e6;
+  --bg-soft: #e8e5d2;
+  --surface: #fbfaf1;
+  --surface-2: #eae7d2;
+  --text: #262b20;
+  --text-strong: #12150d;
+  --muted: #67705c;
+  --accent: #5f6f52;
+  --accent-2: #93a284;
+  --accent-ink: #ffffff;
+  --border: rgba(38, 43, 32, 0.14);
+  --border-strong: rgba(38, 43, 32, 0.32);
+  --hero-overlay: linear-gradient(180deg, rgba(243, 241, 230, 0.05) 0%, rgba(243, 241, 230, 0.45) 55%, var(--bg) 100%);
+  --card-shadow: 0 18px 40px rgba(70, 85, 55, 0.18);
+  --img-fallback: linear-gradient(135deg, #dfe0cd, #5f6f52);
+  --badge-bg: #5f6f52;
+  --badge-text: #ffffff;
+  color-scheme: light;
+}
+
+/* ---------- Theme NOIR-OR — noir + or champagne (luxe classique) ---------- */
+[data-theme="noir-or"] {
+  --bg: #12100d;
+  --bg-soft: #1a1712;
+  --surface: #1e1a14;
+  --surface-2: #26211a;
+  --text: #f2ead9;
+  --text-strong: #ffffff;
+  --muted: #b3a586;
+  --accent: #c9a24b;
+  --accent-2: #e6cf9a;
+  --accent-ink: #171204;
+  --border: rgba(242, 234, 217, 0.14);
+  --border-strong: rgba(242, 234, 217, 0.28);
+  --hero-overlay: linear-gradient(180deg, rgba(18, 16, 13, 0.25) 0%, rgba(18, 16, 13, 0.55) 55%, var(--bg) 100%);
+  --card-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+  --img-fallback: linear-gradient(135deg, #2a251d, #4a3a1e);
+  --badge-bg: #c9a24b;
+  --badge-text: #171204;
+  color-scheme: dark;
+}
+
+/* ---------- Theme DENIM — écru + bleu denim ---------- */
+[data-theme="denim"] {
+  --bg: #f2ede6;
+  --bg-soft: #e7dfd3;
+  --surface: #fbf8f1;
+  --surface-2: #ece4d6;
+  --text: #222d3a;
+  --text-strong: #101820;
+  --muted: #5f6d7c;
+  --accent: #2e4a6b;
+  --accent-2: #6b8cae;
+  --accent-ink: #ffffff;
+  --border: rgba(34, 45, 58, 0.14);
+  --border-strong: rgba(34, 45, 58, 0.32);
+  --hero-overlay: linear-gradient(180deg, rgba(242, 237, 230, 0.05) 0%, rgba(242, 237, 230, 0.45) 55%, var(--bg) 100%);
+  --card-shadow: 0 18px 40px rgba(46, 74, 107, 0.16);
+  --img-fallback: linear-gradient(135deg, #d3dbe2, #2e4a6b);
+  --badge-bg: #2e4a6b;
+  --badge-text: #ffffff;
+  color-scheme: light;
+}

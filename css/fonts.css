@@ -1,0 +1,54 @@
+/* Fonts self-hosted (open source, OFL) — bla Google Fonts, bla CDN.
+   Fichiers f dossier ../fonts/ — kay-khdmo offline. */
+@font-face {
+  font-family: 'Italiana';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/italiana-400.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Albert Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/albert-sans-400.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Albert Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../fonts/albert-sans-600.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Albert Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/albert-sans-700.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Albert Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(../fonts/albert-sans-800.woff2) format('woff2');
+}
+/* Playfair Display — police variable (400 → 700), OFL.
+   Utilisée quand l'admin choisit la police « Playfair » dans
+   Paramètres (attribut data-font="playfair" sur <html>). */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(../fonts/playfair-400.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/playfair-400i.woff2) format('woff2');
+}

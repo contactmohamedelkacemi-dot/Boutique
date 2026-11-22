@@ -1,0 +1,44 @@
+# ============================================================
+#  .HTACCESS — Boutique Style (Offre 2)
+#  Protection des fichiers sensibles (Apache / hébergement
+#  mutualisé type cPanel).
+#
+#  ⚠️ NOTE IMPORTANTE : le serveur intégré de PHP
+#  (php -S localhost:8000, utilisé par start.sh / start.bat)
+#  IGNORE ce fichier. Il ne sert que sur Apache.
+#  En local, la protection est assurée par la garde
+#  APP_RUNNING en haut de chaque fichier config/ et includes/
+#  (voir SECURITY.md).
+# ============================================================
+
+# --- 1. Ne jamais afficher la liste des fichiers d'un dossier ---
+Options -Indexes
+
+# --- 2. Interdire l'accès aux dossiers internes ---
+# config/ = identifiants de la base de données
+# includes/ = code PHP interne (connexion, auth, helpers)
+# (nécessite mod_rewrite — activé sur la plupart des hébergements)
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^(config|includes)/ - [F,L]
+</IfModule>
+
+# --- 3. Interdire l'accès direct aux fichiers sensibles ---
+# database.sql = toute la structure + les données de la boutique
+# *.sql = tout export SQL éventuel
+# *.md = documentation du projet (README, SECURITY, IMAGES-LIST)
+<FilesMatch "\.(sql|md)$">
+    Require all denied
+</FilesMatch>
+
+# install.php = recrée la base + le compte admin.
+# Il refuse de tourner 2 fois tout seul, mais il faut quand même
+# LE SUPPRIMER après l'installation (voir README.md) — ne le
+# bloquez PAS ici avec un <Files>, sinon la première installation
+# serait impossible (erreur 403).
+
+# --- 4. Protéger ce fichier lui-même (déjà le cas par défaut
+# sur Apache, mais on le rappelle explicitement) ---
+<Files ".htaccess">
+    Require all denied
+</Files>
